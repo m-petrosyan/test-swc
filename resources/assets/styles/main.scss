@@ -1,0 +1,99 @@
+@import './vars.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--main-font), sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+
+    #app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    section {
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+        font-weight: 600;
+        border-radius: 5px;
+
+        &.cart {
+            background-color: black;
+            color: white;
+            padding: 8px 25px;
+        }
+    }
+
+    hr {
+        color: rgba(128, 128, 128, 0.28);
+    }
+
+    select {
+        background-color: #f8f8f8;
+        color: black;
+        padding: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.28);
+        border-radius: 5px;
+        cursor: pointer;
+
+        option {
+
+        }
+    }
+
+    select{
+        max-width: 100%;
+    }
+
+    input[type=checkbox] {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .vs__dropdown-toggle {
+        border: none;
+
+        .vs__selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .vs__actions {
+            padding: 4px;
+
+
+            svg {
+                transform: scale(.9);
+                fill: #868686;
+            }
+        }
+    }
+}
