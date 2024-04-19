@@ -5,7 +5,7 @@ import SignInPage from "@/views/auth/SignInPage.vue";
 import DashboardPage from "@/views/dashboard/DashboardPage.vue";
 import DashboardLayouth from "@/layouts/DashboardLayouth.vue";
 import EventCreatePage from "@/views/dashboard/events/EventCreatePage.vue";
-import EventPage from "../views/dashboard/events/EventPage.vue";
+import EventPage from "@/views/dashboard/events/EventPage.vue";
 
 const router = createRouter({
     history: createWebHistory(),
