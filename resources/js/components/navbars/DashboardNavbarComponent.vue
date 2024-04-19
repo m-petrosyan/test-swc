@@ -1,5 +1,5 @@
 <script setup>
-import EventListComponent from "@/events/EventListComponent.vue";
+import EventListComponent from "@/components/events/EventListComponent.vue";
 </script>
 
 <template>
